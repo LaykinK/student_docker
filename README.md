@@ -1,0 +1,1 @@
+Docker compose file for INFOTC 2830 students. This will give you the environment you need for all assignments and projects.
