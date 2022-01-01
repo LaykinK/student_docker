@@ -2,11 +2,12 @@ version: '3.9'
 
 services:
     php-apache:
-        image: php:8.1-apache
+        build:
+          dockerfile: Dockerfile
         ports:
             - 3000:80
         volumes:
-            - "/path/to/webroot:/var/www/html"
+            - "/path/to/www:/var/www/"
 
     mariadb:
         image: mariadb:10.6.5
