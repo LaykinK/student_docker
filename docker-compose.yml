@@ -7,7 +7,8 @@ services:
         ports:
             - 3000:80
         volumes:
-            - "/path/to/www:/var/www/"
+              # change the first part of this path to the location of your code on your computer
+            - "/home/rick/code/class/week1:/var/www/html"
 
     mariadb:
         image: mariadb:10.6.5
