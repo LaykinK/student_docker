@@ -3,7 +3,8 @@ version: '3.9'
 services:
     php-apache:
         build:
-          dockerfile: Dockerfile
+            context: .
+            dockerfile: Dockerfile
         ports:
             - 3000:80
         volumes:
